@@ -10,7 +10,9 @@ Specifically, we look to use interpolants of the form
 
 $$ s(\mathbf{x}) = \sum^n_{i=1}\lambda_i{\phi({\|\mathbf{x}-\mathbf{x}_i\|})}, \hspace{5mm} \mathbf{x} \in \mathbb{R}^d $$
 
-A common method for doing so is the Conjugate Gradient method. This method benefits from 'preconditioning' (basically pre-multiplying our intial equation to 'flatten' the spectrum of the interpolation matrix which should massively speed out the convergence rate). 
+We generate the coefficients $\lambda_i$ from the data centers and knowledge of the RBF we wish to use. 
+
+A common method for doing so is the Conjugate Gradient method (note that this only works for RBFs that generate a positive definite matrix e.g. the inverse multiquadric, the gaussian, the quadratic inverse, etc). This method benefits from 'preconditioning' (basically pre-multiplying our intial equation to 'flatten' the spectrum of the interpolation matrix which should massively speed out the convergence rate). 
 
 We use a novel preconditioner that is highly effective for data drawn from high dimensional space - you can judge for yourself in the demo. 
 
