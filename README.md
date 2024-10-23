@@ -19,12 +19,14 @@ We use a novel preconditioner that is highly effective for data drawn from high 
 We use an efficient implementation of the 'untransformed preconditioned conjugate gradient algorithm' (see section 12 of An Introduction to the Conjugate Gradient Method Without the Agonizing Pain) along with an unpreconditioned classic implementation of the conjugate gradient method. We also have a short bit of code to evaluate your interpolant as well.
 
 Typical workflow:
-Generate data centers and function values yourself, or use the code in Other_functions.
-Generate the interpolation matrix - you can use the interpolation_matrix_generator in Other_functions
-Generate preconditioner - use precon_generator in Other_functions
+1. Generate data centers and function values yourself, or use the code in Other_functions.
 
-use untransformed_Pc_GC to find our vector of coefficients
+2. Generate the interpolation matrix - you can use the interpolation_matrix_generator in Other_functions
 
-You can then use interp in Other_functions to evaluate your interpolant anywhere, using the data centers and coefficients from earlier. 
+3. Generate preconditioner - use precon_generator in Other_functions
+
+4. Use untransformed_Pc_GC to find our vector of coefficients
+
+5. You can then use interp in Other_functions to evaluate your interpolant anywhere, using the data centers and coefficients from earlier. 
 
 
