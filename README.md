@@ -19,7 +19,7 @@ We use a novel preconditioner that is highly effective for data drawn from high 
 We use an efficient implementation of the 'untransformed preconditioned conjugate gradient algorithm' (see section 12 of An Introduction to the Conjugate Gradient Method Without the Agonizing Pain) along with an unpreconditioned classic implementation of the conjugate gradient method. We also have a short bit of code to evaluate your interpolant as well.
 
 Typical workflow:
-1. Generate data centers and function values yourself, or use the code in Other_functions.
+1. Generate data centers and function values yourself, or use the code in Other_functions. It is generally suggested that you normalise your data centers so that the RBFs are not too 'flat'.
 
 2. Generate the interpolation matrix - you can use the interpolation_matrix_generator in Other_functions
 
