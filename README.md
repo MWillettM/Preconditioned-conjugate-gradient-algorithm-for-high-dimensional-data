@@ -8,4 +8,4 @@ naturally arises from the typical interpolation problem for scattered data with 
 
 Specifically, we look to use interpolants of the form
 
-$ s(\mathbf{x}) = \sum^n_{i=1}\lambda_i{\phi({\|\mathbf{x}-\mathbf{x}_i\|})}, \hspace{5mm} \mathbf{x} \in \mathbb{R}^d $
+$$ s(\mathbf{x}) = \sum^n_{i=1}\lambda_i{\phi({\|\mathbf{x}-\mathbf{x}_i\|})}, \hspace{5mm} \mathbf{x} \in \mathbb{R}^d $$
