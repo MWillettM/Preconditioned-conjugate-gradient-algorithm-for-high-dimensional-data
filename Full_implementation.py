@@ -24,7 +24,7 @@ def interpolant_generator_evaluator(data_centers, data_values, RBF,x):
         phi = wt.interpolation_matrix_generator(RBF,x_i)
 
         #generating our preconditioner
-        precon_inv, const_1, const_2 = wt.precon_generator(n,1,'Q','')
+        precon_inv, const_1, const_2 = wt.precon_generator(n,1,RBF,'')
 
         #generating our interpolation coefficients
         solution, count = PCG.untransformed_Pc_GC(phi,f_i,precon_inv,1e-10,const_1,const_2)
